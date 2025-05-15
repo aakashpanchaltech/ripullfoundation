@@ -10,7 +10,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         // Add 'active' class to the clicked link
         this.classList.add('active');
 
-
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
 
@@ -30,7 +29,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Set current year in footer
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-// Optional: Highlight active nav link on scroll
+// Highlight active nav link on scroll
 window.addEventListener('scroll', () => {
     let current = '';
     const sections = document.querySelectorAll('section');
@@ -50,9 +49,6 @@ window.addEventListener('scroll', () => {
             link.classList.add('active');
         }
     });
-     // Special case for hero section as it might not always be detected if very short
+    // Special case for hero section
     if (window.pageYOffset < sections[0].offsetTop - headerHeight - 50) {
-        navLinks.forEach(link => link.classList.remove('active'));
-        document.querySelector('header nav ul li a[href="#hero"]').classList.add('active');
-    }
-});
+        navLinks.
