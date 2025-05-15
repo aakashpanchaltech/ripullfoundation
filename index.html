@@ -1,97 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RIPULL FOUNDATION</title>
+    <title>RIPULL FOUNDATION - Empowering Communities</title>
+    <meta name="description"
+        content="RIPULL FOUNDATION is dedicated to fostering sustainable livelihood, advancing education, redeveloping communities, and improving health.">
+    <meta name="keywords" content="NGO, charity, foundation, livelihood, education, redevelopment, health, community development, India">
+    <meta name="author" content="RIPULL FOUNDATION">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
-        <div class="container">
-            <img src="RIPULL_Foundation_high-removebg.jpg" alt="RIPULL FOUNDATION Logo" id="logo">
-            <h1>RIPULL FOUNDATION</h1>
+        <div class="container nav-container">
+            <a href="/" class="logo-link">
+                <img src="images/RIPULL_Foundation_high-removebg.jpg" alt="RIPULL FOUNDATION Logo" class="logo">
+                <h1>RIPULL FOUNDATION</h1>
+            </a>
             <nav>
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#work">Our Work</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="#donate" class="donate-button">Donate</a></li>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#programs" class="nav-link">Programs</a></li>
+                    <li><a href="#news" class="nav-link">News & Events</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                    <li><a href="#donate" class="nav-link donate-button">Donate</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="hero">
-        <div class="container">
-            <h2>Empowering Lives, Building Futures</h2>
-            <p>RIPULL FOUNDATION is dedicated to fostering sustainable livelihood, advancing education, redeveloping communities, and improving health for a better tomorrow.</p>
-            <a href="#work" class="cta-button">Learn More About Our Work</a>
-        </div>
-    </section>
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <h2>Empowering Lives, Building Futures</h2>
+                <p class="hero-text">
+                    RIPULL FOUNDATION is dedicated to creating lasting change by working alongside communities to address
+                    their most pressing needs. We believe in empowering individuals through sustainable solutions.
+                </p>
+                <a href="#programs" class="cta-button">Explore Our Programs</a>
+            </div>
+        </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>RIPULL FOUNDATION (CIN: U88900DL2024NPL438823) is a non-governmental organization committed to making a meaningful impact on society. Our mission is to empower individuals and communities through comprehensive programs focused on livelihood, education, redevelopment, and health. We believe in creating sustainable change and offering opportunities for growth and well-being to those in need.</p>
-            <h3>Our Vision</h3>
-            <p>To be a leading force in social transformation, creating a world where every individual has the opportunity to live a dignified, healthy, and prosperous life.</p>
-            <h3>Our Mission</h3>
-            <p>To design and implement impactful programs in collaboration with communities and stakeholders that address critical challenges in livelihood, education, health, and overall redevelopment of people's lives.</p>
-        </div>
-    </section>
-
-    <section id="work">
-        <div class="container">
-            <h2>Our Work</h2>
-            <div class="work-grid">
-                <div class="work-item">
-                    <img src="images/livelihood.png" alt="Livelihood Icon Placeholder" class="work-icon"> <h3>Livelihood</h3>
-                    <p>We focus on creating sustainable livelihood opportunities through skill development, vocational training, and support for small enterprises, enabling individuals and families to achieve economic independence.</p>
+        <section id="about" class="about">
+            <div class="container about-container">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>
+                        RIPULL FOUNDATION (CIN: U88900DL2024NPL438823) is a non-governmental organization committed to
+                        transforming lives and communities. We work tirelessly to provide opportunities and support in
+                        livelihood, education, health, and community redevelopment. Our approach is community-centric,
+                        ensuring that our programs are sustainable and impactful.
+                    </p>
+                    <h3>Our Vision</h3>
+                    <p>
+                        To build a just and equitable society where every individual has the opportunity to thrive and reach
+                        their full potential.
+                    </p>
+                    <h3>Our Mission</h3>
+                    <p>
+                        To empower marginalized communities by implementing sustainable programs that address the root
+                        causes of poverty and inequality. We strive to create lasting change through collaboration,
+                        innovation, and a deep respect for human dignity.
+                    </p>
                 </div>
-                <div class="work-item">
-                    <img src="images/education.png" alt="Education Icon Placeholder" class="work-icon"> <h3>Education</h3>
-                    <p>Our educational initiatives aim to provide access to quality learning for underprivileged children and adults, fostering knowledge, skills, and opportunities for a brighter future.</p>
-                </div>
-                <div class="work-item">
-                    <img src="images/redevelopment.png" alt="Redevelopment Icon Placeholder" class="work-icon"> <h3>Redevelopment</h3>
-                    <p>We work towards the redevelopment of people's lives and communities by improving infrastructure, promoting sustainable practices, and empowering communities to lead their own development.</p>
-                </div>
-                <div class="work-item">
-                    <img src="images/health.png" alt="Health Icon Placeholder" class="work-icon"> <h3>Health</h3>
-                    <p>Our health programs are designed to improve access to healthcare services, promote health awareness, and address critical health issues, ensuring the well-being of the communities we serve.</p>
+                <div class="about-image">
+                    <img src="images/about-us.jpg" alt="About Us" />
                 </div>
             </div>
+        </section>
+
+        <section id="programs" class="programs">
+            <div class="container programs-container">
+                <h2>Our Programs</h2>
+                <div class="programs-grid">
+                    <div class="program-item">
+                        <img src="images/livelihood.png" alt="Livelihood" class="program-icon">
+                        <h3>Sustainable Livelihood</h3>
+                        <p>
+                            We empower individuals and families with the skills and resources they need to achieve economic
+                            independence. Our livelihood programs include vocational training, microfinance initiatives, and
+                            support for small businesses. We focus on creating sustainable income-generating opportunities
+                            that break the cycle of poverty.
+                        </p>
+                        <a href="#" class="program-read-more">Learn More</a>
+                    </div>
+                    <div class="program-item">
+                        <img src="images/education.png" alt="Education" class="program-icon">
+                        <h3>Quality Education</h3>
+                        <p>
+                            Education is the foundation for a brighter future. We work to ensure that children and adults
+                            have access to quality education. Our programs include building schools, providing scholarships,
+                            teacher training, and promoting literacy. We believe in creating inclusive learning environments
+                            that foster a love of learning.
+                        </p>
+                        <a href="#" class="program-read-more">Learn More</a>
+                    </div>
+                    <div class="program-item">
+                        <img src="images/health.png" alt="Health" class="program-icon">
+                        <h3>Community Health</h3>
+                        <p>
+                            We are committed to improving the health and well-being of communities. Our health programs
+                            focus on providing access to healthcare, promoting preventive care, and raising awareness about
+                            important health issues. We work to ensure that everyone has the opportunity to live a healthy
+                            and fulfilling life.
+                        </p>
+                        <a href="#" class="program-read-more">Learn More</a>
+                    </div>
+                    <div class="program-item">
+                        <img src="images/redevelopment.png" alt="Community Redevelopment" class="program-icon">
+                        <h3>Community Redevelopment</h3>
+                        <p>
+                            We work alongside communities to improve their infrastructure and living conditions. Our
+                            redevelopment programs include building homes, providing access to clean water and sanitation,
+                            and promoting sustainable development practices. We believe in creating resilient and thriving
+                            communities.
+                        </p>
+                        <a href="#" class="program-read-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="news">
+            <div class="container news-container">
+                <h2>News & Events</h2>
+                <div class="news-grid">
+                    <div class="news-item">
+                        <img src="images/news1.jpg" alt="News Event" class="news-image">
+                        <div class="news-content">
+                            <h3>Livelihood Training Program Graduation</h3>
+                            <p class="news-date">October 26, 2024</p>
+                            <p class="news-text">
+                                We celebrated the graduation of 50 participants from our livelihood training program. They
+                                have gained valuable skills in tailoring and are ready to start their own businesses.
+                            </p>
+                            <a href="#" class="news-read-more">Read More</a>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="images/news2.jpg" alt="News Event" class="news-image">
+                        <div class="news-content">
+                            <h3>Clean Water Project Launched</h3>
+                            <p class="news-date">October 20, 2024</p>
+                            <p class="news-text">
+                                We launched a new project to provide clean and safe drinking water to 3 villages. This will
+                                significantly improve the health and well-being of over 1000 people.
+                            </p>
+                            <a href="#" class="news-read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="donate" class="donate">
+            <div class="container donate-container">
+                <h2>Make a Difference: Donate Today</h2>
+                <p class="donate-text">
+                    Your generous contribution can help us continue our vital work in empowering communities and creating
+                    lasting change. Every donation, big or small, makes a significant impact.
+                </p>
+                <form id="donation-form" class="donation-form">
+                    <div class="form-group">
+                        <label for="donor-name">Your Name</label>
+                        <input type="text" id="donor-name" name="donor-name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donor-email">Your Email</label>
+                        <input type="email" id="donor-email" name="donor-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donation-amount">Donation Amount (USD)</label>
+                        <input type="number" id="donation-amount" name="donation-amount" placeholder="Enter amount"
+                            min="10" required>
+                    </div>
+                    <button type="submit" class="donate-button">Donate Now</button>
+                    <p class="donation-note">
+                        Note: This is a sample donation form. Actual payment processing will need to be integrated with a
+                        payment gateway.
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container contact-container">
+                <h2>Contact Us</h2>
+                <p class="contact-text">
+                    We'd love to hear from you! Please reach out if you have any questions, would like to volunteer, or
+                    want to learn more about our work.
+                </p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>New Delhi, India (Update with specific address)</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:info@ripullfoundation.org">info@ripullfoundation.org</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91-XXXXXXXXXX (Update with phone number)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>
+                    RIPULL FOUNDATION is dedicated to empowering communities and creating lasting change through our
+                    programs in livelihood, education, health, and community redevelopment.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#news">News & Events</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Stay up-to-date with our latest news and events.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
         </div>
-    </section>
-
-    <section id="donate">
-        <div class="container">
-            <h2>Get Involved & Support Us</h2>
-            <p>Your support can make a real difference in the lives of many. Join us in our mission to empower communities and build a better future. Every contribution, big or small, helps us continue our work.</p>
-            <p><em>Currently, we are setting up our online donation channels. Please check back soon or contact us for ways to contribute.</em></p>
-            </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>We would love to hear from you! Whether you have a question, want to collaborate, or wish to support our cause, please feel free to reach out.</p>
-            <p><strong>RIPULL FOUNDATION</strong></p>
-            <p>CIN: U88900DL2024NPL438823</p>
-            <p>Email: <a href="mailto:info@ripullfoundation.org">info@ripullfoundation.org</a> (Example Email)</p>
-            <p>Phone: +91-XXXXXXXXXX (Example Phone Number)</p>
-            <p>Address: New Delhi, India (Update with specific address if available)</p>
-            </div>
-    </section>
-
-    <footer>
-        <div class="container">
+        <div class="footer-bottom">
             <p>&copy; <span id="currentYear"></span> RIPULL FOUNDATION. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLBYFEh0tRWDrfPm7nJVxhZZh/bjWi6+ap8zGX3wSjFK1hGfVOORw79QL5dQA5Cw1zyqOBFA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
