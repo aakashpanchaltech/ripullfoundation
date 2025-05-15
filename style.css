@@ -1,253 +1,153 @@
-/* Basic Reset */
-* {
+body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
     background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Header */
+/* Header Styles */
 header {
-    background: #fff;
-    color: #333;
-    padding: 1rem 0;
-    border-bottom: 1px solid #ddd;
-    position: fixed;
-    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: sticky;
     top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 100;
 }
 
-header .container {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header #logo {
-    height: 60px; /* Adjust as needed */
-    width: auto;
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
 }
 
-header h1 {
-    font-size: 1.8rem;
-    margin-left: 15px;
-    color: #0056b3; /* Theme color */
+.logo {
+    height: 50px;
+    margin-right: 15px;
 }
 
-header nav ul {
+.logo-link h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
 }
 
-header nav ul li {
+nav li {
     margin-left: 20px;
 }
 
-header nav ul li a {
+nav a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    color: #555;
+    font-weight: 400;
     transition: color 0.3s ease;
+    padding: 8px 0;
+    display: block;
 }
 
-header nav ul li a:hover,
-header nav ul li a.donate-button:hover {
+nav a:hover,
+nav a.active {
     color: #007bff;
 }
 
-header nav ul li a.donate-button {
-    background-color: #28a745; /* Green for donate */
-    color: #fff;
-    padding: 8px 15px;
+.donate-button {
+    background-color: #28a745;
+    color: white !important;
+    padding: 10px 15px !important;
     border-radius: 5px;
 }
 
-
-/* Sections General Styling */
-section {
-    padding: 80px 0; /* Adjust padding to account for fixed header */
+.donate-button:hover {
+    background-color: #218838;
 }
 
-section:nth-child(odd) { /* Alternating background for sections if desired */
-   /* background: #f9f9f9; */
-}
-
-section h2 {
+/* Hero Section Styles */
+.hero {
+    background-image: url('images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-    color: #0056b3; /* Theme color */
+    padding: 100px 0;
 }
 
-/* Hero Section */
-#hero {
-    background: linear-gradient(rgba(0, 86, 179, 0.7), rgba(0, 86, 179, 0.7)), url('images/hero-background.jpg') no-repeat center center/cover; /* Placeholder background image */
-    color: #fff;
-    text-align: center;
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 100px; /* Extra padding due to fixed header */
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-#hero h2 {
-    font-size: 3rem;
+.hero h2 {
+    font-size: 3em;
     margin-bottom: 20px;
-    color: #fff;
+    font-weight: 600;
 }
 
-#hero p {
-    font-size: 1.2rem;
+.hero-text {
+    font-size: 1.2em;
     margin-bottom: 30px;
 }
 
 .cta-button {
     display: inline-block;
-    background: #ffc107; /* Yellow for call to action */
-    color: #333;
-    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
+    font-size: 1.1em;
     transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background: #e0a800;
+    background-color: #0056b3;
 }
 
-/* About Us Section */
-#about {
+/* About Section Styles */
+.about {
+    padding: 80px 0;
     background-color: #fff;
 }
-#about h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #0056b3;
+
+.about-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
 }
 
-/* Our Work Section */
-.work-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    text-align: center;
+.about-text {
+    flex: 1;
 }
 
-.work-item {
-    background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+.about-text h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.work-item:hover {
-    transform: translateY(-5px);
-}
-
-.work-item .work-icon {
-    width: 80px; /* Adjust as needed */
-    height: 80px; /* Adjust as needed */
-    margin-bottom: 15px;
-    /* background-color: #007bff; Temporary background if you don't have icons */
-    /* border-radius: 50%; */
-}
-
-.work-item h3 {
-    margin-bottom: 10px;
-    color: #0056b3;
-}
-
-/* Donate Section */
-#donate {
-    background-color: #e9ecef;
-    text-align: center;
-}
-
-/* Contact Section */
-#contact {
-    background-color: #fff;
-    text-align: center;
-}
-
-#contact p {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-#contact a {
-    color: #007bff;
-    text-decoration: none;
-}
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1.5rem 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header .container {
-        flex-direction: column;
-        align-items: center; /* Center items in column layout */
-    }
-
-    header h1 {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 1.5rem;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: center; /* Center nav items */
-        width: 100%;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-
-    header nav ul li a.donate-button {
-        display: block; /* Make donate button full width on mobile */
-        text-align: center;
-    }
-
-    section {
-        padding-top: 180px; /* Adjust padding for taller header on mobile */
-    }
-     #hero {
-        padding-top: 200px; /* Adjust hero padding for taller header on mobile */
-    }
-
-
-    #hero h2 {
-        font-size: 2.2rem;
-    }
-
-    .work-grid {
-        grid-template-columns: 1fr; /* Stack work items on smaller screens */
-    }
-}
+.about-text h3 {
+    font-size: 1.8em;
+    color: #555;
+    margin-top: 30px;
+    margin-bottom
