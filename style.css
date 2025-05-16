@@ -203,7 +203,7 @@ a:hover {
     font-family: 'Lato', sans-serif;
 }
 .sankalp-page-header { 
-     background: linear-gradient(rgba(26, 82, 118, 0.85), rgba(19, 56, 80, 0.9)), url('WhatsApp Image 2025-05-16 at 17.04.58_72e37e08.jpg') no-repeat center center/cover;
+     background: linear-gradient(rgba(26, 82, 118, 0.85), rgba(19, 56, 80, 0.9)), url('images/WhatsApp Image 2025-05-16 at 17.04.58_72e37e08.jpg') no-repeat center center/cover;
      /* Add a fallback background color in case image fails to load */
      background-color: #1A5276;
 }
@@ -295,7 +295,7 @@ section > .container > h2::after {
 
 /* === Homepage Specific Styles === */
 #hero {
-    background: linear-gradient(rgba(26, 82, 118, 0.8), rgba(19, 56, 80, 0.85)), url('WhatsApp Image 2025-05-16 at 17.04.23_02f2f3b0.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(26, 82, 118, 0.8), rgba(19, 56, 80, 0.85)), url('images/WhatsApp Image 2025-05-16 at 17.04.23_02f2f3b0.jpg') no-repeat center center/cover;
     /* Add a fallback background color */
     background-color: #1A5276; 
     color: #fff;
