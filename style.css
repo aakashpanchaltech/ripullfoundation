@@ -1,78 +1,3 @@
-/* --- Styles for Hero Section Background --- */
-
-#hero {
-    background-image: url('8.jpg'); /* Path to your image */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center center; /* Centers the image in the section */
-    position: relative; /* Establishes a positioning context for the overlay */
-    padding: 80px 0; /* Adjust vertical padding as needed for spacing */
-    text-align: center; /* Centers the text content within the hero section */
-}
-
-/* Overlay to ensure text is readable over the background image */
-#hero::before {
-    content: ''; /* Necessary for the pseudo-element to be generated */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity. Adjust (0,0,0) for color and 0.5 for opacity (0.0 to 1.0) */
-    z-index: 1; /* Places the overlay above the background image but below the content */
-}
-
-/* Ensure the container and its content are rendered above the overlay */
-#hero .container {
-    position: relative; /* Allows z-index to take effect */
-    z-index: 2; /* Places the content above the overlay */
-}
-
-/* Text styling for better visibility on the new background */
-#hero h2 {
-    color: #ffffff; /* White color for the main heading */
-    font-size: 2.8em; /* Adjust font size as needed */
-    margin-bottom: 20px;
-}
-
-#hero h2 .highlight-text {
-    color: #FFD700; /* A bright color (e.g., gold) for the highlighted span. Adjust to fit your design. */
-    /* If you prefer it to be the same color as the rest of the h2, you can remove this rule or set it to #ffffff */
-}
-
-#hero p {
-    color: #f0f0f0; /* Light grey or white for the paragraph text for readability */
-    font-size: 1.2em; /* Adjust font size as needed */
-    margin-bottom: 30px;
-    max-width: 600px; /* Optional: constrain width for better readability */
-    margin-left: auto; /* Centers the paragraph if max-width is set */
-    margin-right: auto; /* Centers the paragraph if max-width is set */
-}
-
-/* Styling for the Call to Action button */
-#hero .cta-button {
-    background-color: #E74C3C; /* A contrasting background color for the button (example from your site) */
-    color: #ffffff; /* White text for the button */
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    border: 2px solid transparent; /* No border initially, or a subtle one */
-    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
-}
-
-#hero .cta-button:hover {
-    background-color: #c0392b; /* Darker shade on hover */
-    border-color: #ffffff; /* Optional: Add a white border on hover for emphasis */
-    transform: translateY(-2px); /* Slight lift effect on hover */
-}
-
-#hero .cta-button i {
-    margin-left: 8px; /* Space between button text and icon */
-}
-
-/* --- End of Styles for Hero Section Background --- */
-
-
 /* === Global Resets & Base Styles === */
 * {
     margin: 0;
@@ -82,7 +7,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px; 
+    font-size: 16px;
 }
 
 body {
@@ -99,7 +24,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1140px; 
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -119,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.75em;
 }
 h1 { font-size: 2.8rem; }
-h2 { font-size: 2.4rem; } 
+h2 { font-size: 2.4rem; }
 h3 { font-size: 1.8rem; }
 h4 { font-size: 1.4rem; }
 
@@ -174,25 +99,25 @@ a:hover {
 }
 
 #main-header #logo {
-    height: 50px; 
+    height: 50px;
     width: auto;
     margin-right: 10px;
     object-fit: contain; /* Ensures logo is not distorted */
 }
 
-#main-header h1 { 
+#main-header h1 {
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
     color: #1A5276; /* Primary brand blue */
     font-weight: 700;
     letter-spacing: 0.5px;
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 #main-header nav ul {
     list-style: none;
     display: flex;
-    align-items: center; 
+    align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -215,7 +140,7 @@ a:hover {
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: -2px; 
+    bottom: -2px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #1A5276; /* Primary brand blue */
@@ -234,22 +159,22 @@ a:hover {
 
 .donate-button.nav-donate-button {
     background-color: #E74C3C; /* Accent red */
-    color: #fff !important; 
+    color: #fff !important;
     padding: 8px 18px;
     border-radius: 20px;
     font-weight: 700;
     font-size: 0.9rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-left: 15px; 
+    margin-left: 15px;
 }
 .donate-button.nav-donate-button:hover {
     background-color: #CB4335; /* Darker red */
     transform: translateY(-1px);
 }
-.donate-button.nav-donate-button::after { display: none; } 
+.donate-button.nav-donate-button::after { display: none; }
 
-.menu-toggle { 
-    display: none; 
+.menu-toggle {
+    display: none;
     background: none;
     border: none;
     color: #1A5276; /* Primary brand blue */
@@ -269,7 +194,7 @@ a:hover {
     margin-bottom: 10px;
     font-size: 2.8rem;
 }
-.page-header h2::after{ display: none; } 
+.page-header h2::after{ display: none; }
 .page-header p {
     font-size: 1.1rem;
     color: #BDC3C7; /* Light grey text on dark bg */
@@ -277,10 +202,10 @@ a:hover {
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
 }
-.sankalp-page-header { 
-     background: linear-gradient(rgba(26, 82, 118, 0.85), rgba(19, 56, 80, 0.9)), url('images/WhatsApp Image 2025-05-16 at 17.04.58_72e37e08.jpg') no-repeat center center/cover;
-     /* Add a fallback background color in case image fails to load */
-     background-color: #1A5276;
+.sankalp-page-header {
+    background: linear-gradient(rgba(26, 82, 118, 0.85), rgba(19, 56, 80, 0.9)), url('images/WhatsApp Image 2025-05-16 at 17.04.58_72e37e08.jpg') no-repeat center center/cover;
+    /* Add a fallback background color in case image fails to load */
+    background-color: #1A5276;
 }
 
 /* === General Section Styling === */
@@ -288,7 +213,7 @@ section {
     padding: 70px 0;
 }
 .light-bg { background-color: #F8F9F9; } /* Very light grey */
-.light-bg-alt { background-color: #FFFFFF; } 
+.light-bg-alt { background-color: #FFFFFF; }
 .dark-bg {
     background-color: #2C3E50; /* Dark blue/slate */
     color: #ECF0F1; /* Light grey text */
@@ -370,9 +295,9 @@ section > .container > h2::after {
 
 /* === Homepage Specific Styles === */
 #hero {
-    background: linear-gradient(rgba(26, 82, 118, 0.8), rgba(19, 56, 80, 0.85)), url('images/WhatsApp Image 2025-05-16 at 17.04.23_02f2f3b0.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(26, 82, 118, 0.8), rgba(19, 56, 80, 0.85)), url('8.jpg') no-repeat center center/cover; /* MODIFIED: Changed to 8.jpg. If 8.jpg is in an 'images' folder, use url('images/8.jpg') */
     /* Add a fallback background color */
-    background-color: #1A5276; 
+    background-color: #1A5276;
     color: #fff;
     text-align: center;
     min-height: 80vh;
@@ -381,7 +306,7 @@ section > .container > h2::after {
     justify-content: center;
     padding-top: 0; /* Override general section padding */
 }
-#hero .container { padding: 60px 15px; } 
+#hero .container { padding: 60px 15px; }
 #hero h2 {
     font-size: 3.5rem; margin-bottom: 20px; color: #fff; line-height: 1.2;
 }
@@ -398,7 +323,7 @@ section > .container > h2::after {
 #home-about .home-about-text { flex: 1; }
 #home-about .home-about-image {
     flex-basis: 45%;
-    max-width: 450px; 
+    max-width: 450px;
 }
 #home-about .home-about-image img {
     width: 100%;
@@ -412,26 +337,26 @@ section > .container > h2::after {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
 }
-.home-work-grid .work-item { text-decoration: none; } 
+.home-work-grid .work-item { text-decoration: none; }
 .card-style {
     background: #fff;
     padding: 30px;
-    border-radius: 10px; 
-    box-shadow: 0 6px 20px rgba(44, 62, 80, 0.07); 
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(44, 62, 80, 0.07);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center; 
+    text-align: center;
     display: flex;
     flex-direction: column;
 }
 .card-style:hover {
-    transform: translateY(-8px); 
+    transform: translateY(-8px);
     box-shadow: 0 10px 30px rgba(44, 62, 80, 0.1);
 }
 .work-fas-icon {
     font-size: 2.5rem;
     color: #1A5276; /* Primary brand blue */
     margin-bottom: 15px;
-    display: block; 
+    display: block;
 }
 .card-style h3 {
     margin-bottom: 10px;
@@ -479,10 +404,10 @@ section > .container > h2::after {
     text-align: center;
     font-family: 'Lato', sans-serif;
 }
-.vision-mission-motto { 
+.vision-mission-motto {
     display: flex;
     justify-content: space-between;
-    gap: 30px; 
+    gap: 30px;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -507,8 +432,8 @@ section > .container > h2::after {
     width: 160px; height: 160px; object-fit: cover; border-radius: 50%; border: 5px solid #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.1); flex-shrink: 0;
 }
 .founder-info h4 { font-size: 1.7rem; color: #2C3E50; margin-bottom: 5px; } /* Dark blue/slate */
-.founder-info span { font-size: 0.9rem; color: #E74C3C; font-family: 'Lato', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 15px; } /* Accent red */
-.founder-quote { font-size: 1.1rem; font-style: italic; color: #566573; margin-bottom: 20px; padding-left: 20px; border-left: 3px solid #1A5276; font-family: 'Lato', sans-serif; } /* Medium grey, Primary blue border */
+.founder-info span { font-size: 0.9rem; color: #E74C3C; font-family: 'Lato', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 15px; }
+.founder-quote { font-size: 1.1rem; font-style: italic; color: #566573; margin-bottom: 20px; padding-left: 20px; border-left: 3px solid #1A5276; font-family: 'Lato', sans-serif; } /* Medium grey, Primary brand blue */
 .founder-full-message summary { cursor: pointer; color: #1A5276; font-weight: 600; font-family: 'Lato', sans-serif; margin-bottom: 10px; display: inline-block; } /* Primary brand blue */
 .founder-full-message summary:hover { text-decoration: underline; }
 .founder-full-message summary i { margin-left: 5px; transition: transform 0.3s ease; }
@@ -541,7 +466,7 @@ section > .container > h2::after {
     align-items: flex-start;
 }
 #initiatives-overview .initiative-item:nth-child(even) {
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
 }
 .initiative-icon {
     font-size: 2.8rem;
@@ -555,7 +480,7 @@ section > .container > h2::after {
 .initiative-text p { margin-bottom: 15px; font-size: 1rem; color: #4A4A4A; } /* Dark grey */
 .initiative-image {
     width: 100%;
-    max-width: 450px; 
+    max-width: 450px;
     height: auto;
     border-radius: 8px;
     margin-top: 20px;
@@ -571,7 +496,7 @@ section > .container > h2::after {
 .sankalp-intro-image { flex-basis: 45%; max-width: 500px; }
 .sankalp-intro-image img { width: 100%; border-radius: 8px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
 
-.sankalp-findings > h3, .sankalp-needs-next > .sankalp-column > h3, .sankalp-call-to-action > h3 { 
+.sankalp-findings > h3, .sankalp-needs-next > .sankalp-column > h3, .sankalp-call-to-action > h3 {
     text-align:center; margin-bottom: 30px; font-size: 2rem;
 }
 .sankalp-findings > h3 i { margin-right: 10px; }
@@ -723,13 +648,13 @@ section > .container > h2::after {
 #main-footer .footer-content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 30px;
 }
 #main-footer .footer-col {
     flex: 1;
-    min-width: 220px; 
+    min-width: 220px;
 }
 #main-footer .footer-col h4 {
     color: #fff;
@@ -789,11 +714,11 @@ section > .container > h2::after {
 
     #home-about .home-about-content { flex-direction: column; text-align: center; }
     #home-about .home-about-image { margin-top:30px; max-width: 80%;}
-    
+
     #initiatives-overview .initiative-item { flex-direction: column !important; text-align: center;} /* Important to override inline style if any */
     .initiative-icon { margin: 0 auto 15px auto; }
     .initiative-image { margin: 20px auto 0 auto; max-width: 90%; }
-    
+
     .sankalp-intro-block { flex-direction: column; text-align: center; }
     .sankalp-intro-image { margin-top: 20px; max-width: 90%;}
     .sankalp-needs-next { flex-direction: column; }
@@ -807,31 +732,31 @@ section > .container > h2::after {
 
 @media (max-width: 768px) { /* Mobile */
     html { font-size: 14px; }
-    #main-header .container { position: relative; } 
+    #main-header .container { position: relative; }
     #main-header nav ul {
-        display: none; 
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 100%; 
+        top: 100%;
         left: 0;
         width: 100%;
         background-color: #fff;
         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
         padding: 10px 0;
-        z-index: 999; 
+        z-index: 999;
     }
-    #main-header nav ul.active { display: flex; } 
+    #main-header nav ul.active { display: flex; }
     #main-header nav ul li {
         margin: 10px 0;
         width: 100%;
         text-align: center;
     }
     #main-header nav ul li a.donate-button.nav-donate-button {
-        display: inline-block; 
-        width: auto; 
+        display: inline-block;
+        width: auto;
         padding: 10px 20px;
     }
-    .menu-toggle { display: block; } 
+    .menu-toggle { display: block; }
 
     .page-header { padding: 40px 0; }
     .page-header h2 { font-size: 2.2rem; }
@@ -847,7 +772,7 @@ section > .container > h2::after {
     }
     .founder-image { margin-bottom: 20px; }
     .founder-info blockquote { margin-left:0; border-left:none; border-top:3px solid #1A5276; padding-left:0; padding-top:15px; text-align:center; } /* Primary brand blue */
-    
+
     .team-gallery-image { max-width: 90%; }
 
     #main-footer .footer-content { flex-direction: column; text-align: center; }
