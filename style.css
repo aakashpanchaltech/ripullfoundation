@@ -1,7 +1,7 @@
 /* --- Styles for Hero Section Background --- */
 
 #hero {
-    background-image: url('9.jpg'); /* Path to your image */
+    background-image: url('8.jpg'); /* Path to your image */
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center center; /* Centers the image in the section */
     position: relative; /* Establishes a positioning context for the overlay */
