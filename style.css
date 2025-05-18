@@ -268,7 +268,7 @@ a:hover {
 }
 /* Specific page header for original Sankalp page - can be removed or repurposed if not used */
 .sankalp-page-header {
-    background: linear-gradient(rgba(26, 82, 118, 0.85), rgba(19, 56, 80, 0.9)), url('images/WhatsApp Image 2025-05-16 at 17.04.58_72e37e08.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(26, 82, 118, 0.85), rgba(19, 56, 80, 0.9)), url('WhatsApp Image 2025-05-16 at 17.04.58_72e37e08.jpg') no-repeat center center/cover;
     background-color: #1A5276;
 }
 
@@ -601,7 +601,7 @@ section > .container > h2::after {
 
 /* === Bachpan Express Page Specific Styles (applies to sankalp.html and bachpan-express.html) === */
 .bachpan-express-header {
-    background: linear-gradient(rgba(231, 76, 60, 0.8), rgba(192, 57, 43, 0.85)), url('images/bachpan-hero-placeholder.jpg') no-repeat center center/cover; /* Replace with a suitable hero image if you have one, or use a solid color */
+    background: linear-gradient(rgba(231, 76, 60, 0.8), rgba(192, 57, 43, 0.85)), url('bachpan-hero-placeholder.jpg') no-repeat center center/cover; /* Replace with a suitable hero image if you have one, or use a solid color */
     background-color: #E74C3C; /* Fallback color (accent red) */
 }
 
